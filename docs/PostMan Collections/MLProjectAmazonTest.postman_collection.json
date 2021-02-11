@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "027479b4-351d-4cb2-9461-bfa5da210474",
+		"name": "MLProjectAmazonTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TopSecret_Split GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-3-129-18-228.us-east-2.compute.amazonaws.com:80/topsecret_split",
+					"protocol": "http",
+					"host": [
+						"ec2-3-129-18-228",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "80",
+					"path": [
+						"topsecret_split"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TopSecret_Split POST KENOBI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"distance\": 300,\r\n\"message\": [\"este\", \"\", \"\", \"mensaje\", \"\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-129-18-228.us-east-2.compute.amazonaws.com:80/topsecret_split/kenobi",
+					"protocol": "http",
+					"host": [
+						"ec2-3-129-18-228",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "80",
+					"path": [
+						"topsecret_split",
+						"kenobi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TopSecret_Split POST SKYWALKER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"distance\": 320,\r\n\"message\": [\"\", \"es\", \"\", \"\", \"secreto\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-129-18-228.us-east-2.compute.amazonaws.com:80/topsecret_split/skywalker",
+					"protocol": "http",
+					"host": [
+						"ec2-3-129-18-228",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "80",
+					"path": [
+						"topsecret_split",
+						"skywalker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TopSecret_Split POST SATO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"distance\": 766,\r\n\"message\": [\"este\", \"\", \"un\", \"\", \"\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-129-18-228.us-east-2.compute.amazonaws.com:80/topsecret_split/sato",
+					"protocol": "http",
+					"host": [
+						"ec2-3-129-18-228",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "80",
+					"path": [
+						"topsecret_split",
+						"sato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TopSecret POST",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n\"name\": \"kenobi\",\r\n\"distance\": 300,\r\n\"message\": [\"este\", \"\", \"\", \"mensaje\", \"\"]\r\n},\r\n{\r\n\"name\": \"skywalker\",\r\n\"distance\": 320,\r\n\"message\": [\"\", \"es\", \"\", \"\", \"secreto\"]\r\n},\r\n{\r\n\"name\": \"sato\",\r\n\"distance\": 766,\r\n\"message\": [\"este\", \"\", \"un\", \"\", \"\"]\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-129-18-228.us-east-2.compute.amazonaws.com:80/topsecret",
+					"protocol": "http",
+					"host": [
+						"ec2-3-129-18-228",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "80",
+					"path": [
+						"topsecret"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
