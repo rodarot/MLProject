@@ -1,7 +1,6 @@
-Dockerfile
-FROM openjdk:8-jre-alpine
+FROM adoptopenjdk/openjdk15:ubi
 
-COPY target/mlProject.jar app/mlProject.jar
+COPY target/MLProject-0.0.1-SNAPSHOT.jar app/mlProject.jar
 
 WORKDIR app
 
